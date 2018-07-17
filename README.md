@@ -2,6 +2,7 @@
 This repository contains the codebase for the paper "Deep Reinforcement Learning for Swarm Systems". The code for TRPO is based on the OpenAI Baselines and the environment structure is inspired by OpenAI's multi-agent particle environments.
 
 https://github.com/openai/baselines/
+
 https://github.com/openai/multiagent-particle-envs/
 
 ## Installation
