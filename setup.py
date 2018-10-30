@@ -38,7 +38,7 @@ setup(
                       'pyparsing == 2.2.0',
                       'python-dateutil == 2.7.3',
                       'pytz == 2018.5',
-                      'requests == 2.19.1',
+                      'requests == 2.20.0',
                       'scipy == 1.1.0',
                       'Shapely == 1.6.4.post1',
                       'six == 1.11.0',
