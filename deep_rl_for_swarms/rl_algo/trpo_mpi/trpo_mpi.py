@@ -66,7 +66,7 @@ def traj_segment_generator(pi, env, horizon, stochastic):
                     new=np.array(news[:, na]),
                     ac=np.array(acs[:, na, :]),
                     prevac=np.array(prevacs[:, na, :]),
-                    nextvpred=vpred[na] * (1 - new),
+                    nextvpred=vpred[na] * (1 - new) if not sub_sample else vpred[sub_sample_idx[na]] * (1 - new),
                     ep_rets=[epr[na] for epr in ep_rets],
                     ep_lens=ep_lens,
                     time_steps=np.array(time_steps)
