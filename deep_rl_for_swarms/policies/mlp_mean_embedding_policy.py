@@ -21,18 +21,19 @@ class MlpPolicy(object):
 
         num_hid_layers = len(hid_size)
         mean_emb = ob_space.dim_mean_embs
-        nr_rec_obs = mean_emb[0]
-        dim_rec_obs = mean_emb[1]
-        dim_flat_obs = ob_space.dim_flat_o
+        nr_rec_obs = mean_emb[0]  # each agents receives n_agents - 1 observations...
+        dim_rec_obs = mean_emb[1]  # ... each of size dim_rec_obs ...
+        dim_flat_obs = ob_space.dim_flat_o  # ... plus a local observation
 
         assert isinstance(ob_space, gym.spaces.Box)
 
         self.pdtype = pdtype = make_pdtype(ac_space)
-
+        # a row in ob contains an agent's flattened observation, the first dimension needs to be None because we use it
+        # for training and inference, i.e.[None, (n_agents - 1) * dim_rec_obs + dim_flat_obs]
         ob = U.get_placeholder(name="ob", dtype=tf.float32, shape=(None,) + ob_space.shape)
 
-        flat_obs_input_layer = tf.slice(ob, [0, 0], [-1, nr_rec_obs * dim_rec_obs])
-        flat_feature_input_layer = tf.slice(ob, [0, nr_rec_obs * dim_rec_obs], [-1, dim_flat_obs])
+        flat_obs_input_layer = tf.slice(ob, [0, 0], [-1, nr_rec_obs * dim_rec_obs])  # grab only the part that goes into mean embedding
+        flat_feature_input_layer = tf.slice(ob, [0, nr_rec_obs * dim_rec_obs], [-1, dim_flat_obs])  # grab only the local observation
 
         with tf.variable_scope('vf'):
             with tf.variable_scope('me'):

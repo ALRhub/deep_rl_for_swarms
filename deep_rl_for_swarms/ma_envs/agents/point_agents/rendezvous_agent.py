@@ -78,7 +78,7 @@ class PointAgent(Agent):
             self.dim_mean_embs = None
             self._dim_o = np.prod(self.dim_rec_o) + self.dim_flat_o
         elif self.obs_mode == 'sum_obs_acc':
-            self.dim_rec_o = (100, 7)
+            self.dim_rec_o = (self.n_agents - 1, 7)
             self.dim_mean_embs = self.dim_rec_o
             self.dim_local_o = 2 + 3 * int(not self.torus)
             self.dim_flat_o = self.dim_local_o

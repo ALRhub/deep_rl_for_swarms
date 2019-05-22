@@ -32,7 +32,7 @@ setup(
                       'mpi4py == 3.0.0',
                       'networkx == 2.1',
                       'numpy == 1.14.5',
-                      'pkg-resources == 0.0.0',
+                      # 'pkg-resources == 0.0.0',
                       'protobuf == 3.6.0',
                       'pyglet == 1.3.2',
                       'pyparsing == 2.2.0',
@@ -40,12 +40,12 @@ setup(
                       'pytz == 2018.5',
                       'requests == 2.20.0',
                       'scipy == 1.1.0',
-                      'Shapely == 1.6.4.post1',
+                      # 'Shapely == 1.6.4.post1',
                       'six == 1.11.0',
-                      'tensorboard == 1.9.0',
-                      'tensorflow == 1.9.0',
+                      'tensorboard == 1.13.1',
+                      'tensorflow == 1.13.1',
                       'termcolor == 1.1.0',
-                      'urllib3 == 1.23',
+                      'urllib3 == 1.24.2',
                       'Werkzeug == 0.14.1'
                       ]
 )
