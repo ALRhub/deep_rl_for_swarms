@@ -46,6 +46,6 @@ setup(
                       'tensorflow == 1.13.1',
                       'termcolor == 1.1.0',
                       'urllib3 == 1.24.2',
-                      'Werkzeug == 0.14.1'
+                      'Werkzeug == 0.15.3'
                       ]
 )
