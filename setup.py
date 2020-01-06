@@ -42,8 +42,8 @@ setup(
                       'scipy == 1.1.0',
                       # 'Shapely == 1.6.4.post1',
                       'six == 1.11.0',
-                      'tensorboard == 1.13.1',
-                      'tensorflow == 1.13.1',
+                      'tensorboard == 1.15.0',
+                      'tensorflow == 1.15.0',
                       'termcolor == 1.1.0',
                       'urllib3 == 1.24.2',
                       'Werkzeug == 0.14.1'
