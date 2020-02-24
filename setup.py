@@ -12,7 +12,7 @@ setup(
     description='',
     install_requires=['absl-py == 0.2.2',
                       'astor == 0.7.1',
-                      'bleach == 1.5.0',
+                      'bleach == 3.1.1',
                       'certifi == 2018.4.16',
                       'chardet == 3.0.4',
                       'cloudpickle == 0.5.3',
