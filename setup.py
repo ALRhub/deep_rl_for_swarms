@@ -45,7 +45,7 @@ setup(
                       'tensorboard == 1.15.0',
                       'tensorflow == 1.15.2',
                       'termcolor == 1.1.0',
-                      'urllib3 == 1.24.2',
+                      'urllib3 == 1.26.5',
                       'Werkzeug == 0.15.3'
                       ]
 )
