@@ -33,7 +33,7 @@ setup(
                       'networkx == 2.1',
                       'numpy == 1.14.5',
                       # 'pkg-resources == 0.0.0',
-                      'protobuf == 3.6.0',
+                      'protobuf == 3.15.0',
                       'pyglet == 1.3.2',
                       'pyparsing == 2.2.0',
                       'python-dateutil == 2.7.3',
