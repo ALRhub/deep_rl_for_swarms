@@ -24,7 +24,7 @@ setup(
                       'gast == 0.2.0',
                       'grpcio == 1.13.0',
                       'gym == 0.10.5',
-                      'html5lib == 0.9999999',
+                      'html5lib == 0.999999999',
                       'idna == 2.7',
                       'kiwisolver == 1.0.1',
                       'Markdown == 2.6.11',
