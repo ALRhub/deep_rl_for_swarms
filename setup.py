@@ -13,7 +13,7 @@ setup(
     install_requires=['absl-py == 0.2.2',
                       'astor == 0.7.1',
                       'bleach == 3.1.4',
-                      'certifi == 2018.4.16',
+                      'certifi == 2022.12.7',
                       'chardet == 3.0.4',
                       'cloudpickle == 0.5.3',
                       'cycler == 0.10.0',
